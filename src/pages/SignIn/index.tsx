@@ -49,6 +49,7 @@ const SignIn: React.FC = () => {
         });
 
         history.push('/dashboard');
+        console.log('ola');
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
